@@ -2,7 +2,7 @@ NAME      = mosquitto_auth_plugin_http
 
 MOSQUITTO = ../../mosquitto-ssl/mosquitto-1.3.5
 INC       = -I. -I$(MOSQUITTO)/lib -I$(MOSQUITTO)/src
-CFLAGS    = -Wall -Werror -fPIC
+CFLAGS    = -Wall -Werror -Wno-implicit-function-declaration -fPIC 
 #DEBUG     = -DMQAP_DEBUG
 
 LIBS      = -lcurl
