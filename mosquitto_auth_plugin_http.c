@@ -145,8 +145,7 @@ int mosquitto_auth_acl_check(void *user_data, const char *clientid, const char *
   fprintf(stderr, "mosquitto_auth_acl_check: clientid=%s, username=%s, topic=%s, access=%s\n",
     clientid, username, topic, access_name);
 #endif
-//mosquitto_log_printf(MOSQ_LOG_DEBUG, "mosquitto_auth_acl_check: clientid=%s, username=%s, topic=%s, access=%s", 
-    clientid, username, topic, access_name);
+//mosquitto_log_printf(MOSQ_LOG_DEBUG, "mosquitto_auth_acl_check: clientid=%s, username=%s, topic=%s, access=%s", clientid, username, topic, access_name);
 
   int rc;
   int rv;
